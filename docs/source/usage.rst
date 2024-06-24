@@ -1,34 +1,52 @@
-Usage
-=====
+Bacula Project
+==============
 
-.. _installation:
+.. _Objectivs:
+Ojectivs
+--------
+The goal of this project is to implements a backuping solution using Bacula Software.
 
-Installation
-------------
 
-To use Lumache, first install it using pip:
+.. _Steps:
+Steps
+-----
 
-.. code-block:: console
+Configuration and Installation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1. Creating a Trello Kanban (if possible using SCRUM method) : `Trello <https://trello.com/b/cPnD8DEN/project-management>`_
+2. Cable management from scratch
+3. Operating system choose
 
-   (.venv) $ pip install lumache
+   A) Debian
 
-Creating recipes
-----------------
+   B) ReadHat (Fedora??)
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+4. Server configuration
 
-.. autofunction:: lumache.get_random_ingredients
+   A) OS Installation
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
+   B) Network configuration
 
-.. autoexception:: lumache.InvalidKindError
+   C) SSH Server Installation/ConfiguraTIon
 
-For example:
+5. Switch configuration
 
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+Bacula
+~~~~~~
 
+1. Bacula installation
+2. Bacula configuration
+3. Bacula tests
+
+   i. Only with a partition dedicated to backups
+
+Robot
+~~~~~~
+
+Unit Tests
+~~~~~~~~~~
+
+Optional
+~~~~~~~~
+
+* Automatic deployment with puppet (see if possible)
